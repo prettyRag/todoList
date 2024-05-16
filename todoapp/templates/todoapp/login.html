@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title>Login</title>
    </head>
 <body>
@@ -33,7 +32,7 @@
         <input type="Submit" value="Login">
       </div>
       <div class="text">
-        <h3>Don't have an account? <a href="#">Register now</a></h3>
+        <h3>Don't have an account? <a href="{% url 'register' %}">Register now</a></h3>
       </div>
       <div class="text">
         <h3>Forgot Password? <a href="#">Reset</a></h3>
@@ -71,7 +70,7 @@ body{
   position: relative;
   font-size: 22px;
   font-weight: 600;
-  color: #413838;
+  color: #333;
 }
 .wrapper h2::before{
   content: '';
